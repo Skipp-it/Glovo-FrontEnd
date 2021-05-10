@@ -16,7 +16,7 @@ Add to cart option is the last step before the payment and on this page, the use
 
 Don't stay hungry and visit us!
 
-## For the [back-end](https://github.com/stanalexandrucode/56_tt_glovo) of the app.
+## For the [back-end](https://github.com/Skipp-it/56_tt_glovo) of the app.
 
 ---
 
