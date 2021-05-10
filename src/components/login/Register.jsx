@@ -80,7 +80,7 @@ export default function Register() {
         </Form>
       </Card.Body>
       <div>
-        <div className='checkbox'>Are you provider? </div>
+        <div className='checkbox'>Are you a provider? </div>
         <input
           type='checkbox'
           onClick={() => {
