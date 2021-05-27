@@ -1,14 +1,15 @@
 import useAsync from "../../getData/misc/useAsync";
 import Cookies from '../../../node_modules/js-cookie';
 import {useParams} from "react-router-dom";
-import {useState} from "react";
+import {useContext, useState} from "react";
 import axios from "axios";
+import {AuthContext} from "../authentication/AuthContext";
 
 
 const DetailMeal = () => {
         let token = Cookies.get('token');
         const param = useParams();
-
+        const {auth} = useContext(AuthContext);
         const [readMore, setReadMore] = useState(false);
 
 
@@ -84,12 +85,12 @@ const DetailMeal = () => {
                                             }
 
                                         </div>
-                                        <div>
+                                        {auth ? (<div>
                                             <button className="btn-detail-meal" onClick={handleAdd}>
                                                 {' '}
-                                                add
+                                                add fav
                                             </button>
-                                        </div>
+                                        </div>) : (<div/>)}
 
                                     </div>
 

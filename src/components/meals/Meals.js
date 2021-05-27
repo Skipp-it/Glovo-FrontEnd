@@ -37,8 +37,8 @@ const Meals = () => {
                         dataApi[i].price = matching.price
                     }
                 }
-                setData(dataApi)
-                setFilterData(dataApi);
+                setData(dataApi.sort((a, b) => a.price > b.price ? 1 : -1))
+                setFilterData(dataApi.sort((a, b) => a.price > b.price ? 1 : -1));
             })
         )
     }
@@ -83,22 +83,23 @@ const Meals = () => {
         let value = e.target.value;
         if (value === "low") {
             setFilterData(data.filter(data => data.price <= 20))
+            console.log(data)
         } else if (value === "medium") {
-            setFilterData(data.filter(data => data.price <= 40))
+            setFilterData(data.filter(data => data.price >= 21 && data.price <= 50))
         } else if (value === "high") {
-            setFilterData(data)
+            setFilterData(data.filter(data => data.price >= 51))
         }
     }
 
 
     return (
         <>
-                    <h2 className="title-category">{category}</h2>
+            <h2 className="title-category">{category}</h2>
             <div className="meals-category-display">
                 <div className="category-meals" id="meals-category">
-                <div className="meal-sort-by-price">
-                <MealFilterByPrice  handleChange={handleChange}/>
-                </div>
+                    <div className="meal-sort-by-price">
+                        <MealFilterByPrice handleChange={handleChange}/>
+                    </div>
                     <div className="meals-category">
                         {filterData.map((meal) => {
                             return (
@@ -119,4 +120,3 @@ const Meals = () => {
 };
 
 export default Meals;
-

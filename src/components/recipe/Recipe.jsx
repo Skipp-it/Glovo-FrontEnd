@@ -14,7 +14,7 @@ const Recipe = ({id, name, description, userFirstName, userId, image, handleDele
                 <p className="description-meal">
                     {readMore
                         ? description
-                        : `${description.substring(0, 300)}...`}
+                        : `${description.substring(0, 10)}...`}
                     <button
                         className="showBtn"
                         onClick={() => setReadMore(!readMore)}>
@@ -23,7 +23,7 @@ const Recipe = ({id, name, description, userFirstName, userId, image, handleDele
                 </p>
             </div>
             <div >
-                <img className="image-recipe" src={image}/>
+                <img className="image-recipe" src={image} alt='description'/>
             </div>
             <div>
                 {userId === parseInt(Cookies.get("id_user_DB")) ?

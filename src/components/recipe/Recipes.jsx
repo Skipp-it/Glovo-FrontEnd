@@ -11,7 +11,7 @@ export default function Recipes() {
 
     const [recipes, setRecipes] = useState([])
     const [token, setToken] = useState('');
-    const [notFound, setNotFound] = useState(true);
+    // const [notFound, setNotFound] = useState(true);
 
     const getAllRecipes = async () => {
         const response = await axiosSpring
@@ -21,9 +21,7 @@ export default function Recipes() {
                 },
             })
             .catch((err) => console.log('Error:', err));
-        console.log(response)
         if (response.status === 200 && response.data) {
-            console.log("data", response);
             setRecipes(response.data)
             return response.data;
         }
@@ -33,7 +31,7 @@ export default function Recipes() {
         getAllRecipes()
         setToken(Cookies.get('token'));
         if (token && token !== '') {
-            setNotFound(false)
+            // setNotFound(false)
         }
     }, [token]);
 

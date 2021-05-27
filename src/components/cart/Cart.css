@@ -1,10 +1,21 @@
+
+.cart-box{
+  padding:4% !important;
+}
+
+.row h2{
+  font-family: 'Single Sleeve', sans-serif;
+  color: rgb(210, 105, 30) !important;
+}
+
 section .cart {
-  background: chocolate !important;
+  background-color: rgba(29, 26, 26, 0.600) !important;
   width: 60%;
   position: relative;
   margin: 0 auto;
   bottom: 10px;
-  border: 1px solid hsl(210, 31%, 80%);
+  border: chocolate 1px solid !important;
+
 }
 
 .amount span {
@@ -38,11 +49,30 @@ section .cart {
   text-decoration: none;
   background: #333;
   color: hsl(210, 31%, 80%);
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 2px;
   padding: 10px 25px;
 }
-.total h3 {
+.total h1 {
+  font-size: 2.5rem;
+  margin-top: .5%;
   margin-right: 50px;
   color: hsl(210, 31%, 80%);
+  background: chocolate;
+  padding: .1%;
+  border-radius: 1%;
+}
+.total_price_quantity{
+  margin-left: 5%;
+  border-radius: 5%;
+  color: rgb(210, 105, 30) !important;
+  font-size: 2rem;
+}
+.row span{
+  font-size: 1.5rem;
+}
+
+button{
+   border: chocolate 1px solid !important;
+   color: hsl(210, 31%, 80%);
 }

@@ -10,8 +10,8 @@ export default function AppLogin() {
   const current = toggle ? 'Register' : 'Login';
   const [rightSide, setRightSide] = useState('right');
 
-  //TODO de facut state la get cookie-uri! si de bagat dependency  pe slide sa se mute de pe register pe login
-  // const currentActive = isLoginActive ? 'login' : 'register';
+  //TODO de facut state la get cookie-uri! si de bagat dependency  pe slide sa se mute de pe register pe loginRegister
+  // const currentActive = isLoginActive ? 'loginRegister' : 'register';
 
   const handleOnClick = () => {
     setToggle(!toggle);

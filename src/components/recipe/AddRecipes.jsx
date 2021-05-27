@@ -34,7 +34,7 @@ export default function AddRecipes() {
     if (res.status === 202) {
       setError('');
       toast.success('Recipe was added!');
-      // window.location.href = 'http://localhost:3000';
+      window.location.href = 'http://localhost:3000/recipes/all';
       return true;
     }
     toast.error('Try again');
@@ -54,6 +54,7 @@ export default function AddRecipes() {
 
     const ReactS3Client = new S3(config);
     ReactS3Client.uploadFile(file, newFilename).then((data) => {
+      console.log(config)
       if (data.status === 204) {
         toast.success('Image was added!');
         setImage(data.location);
@@ -80,6 +81,7 @@ export default function AddRecipes() {
               Upload
             </button>
           </form>
+           <img src={image} style={{width: '200px', padding: '3%'}}/>
           <Form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
               <Form.Group>

@@ -3,8 +3,8 @@ h5 {
 }
 
 .category-meals {
-    margin: 0 auto;
-    display: flex;
+   width : 100%;
+    /*display: flex;*/
 
 }
 
@@ -48,7 +48,8 @@ h5 {
 
 
 .category-meals h2 {
-    margin-left: 14em;
+    text-align: center;
+    /*margin-left: 50%;*/
     font-family: 'Single Sleeve', sans-serif;
     font-size: 4rem;
     justify-content: space-between;
@@ -215,14 +216,14 @@ h5 {
 }
 
 .filter-by-price{
-    border: 1px chocolate solid !important;
+    /*border: 1px chocolate solid !important;*/
     width: 100% !important;
     padding: 2em !important;
     margin-top: 1em !important;
     color: #f7f7f7;
     border-radius: 15%;
-     box-shadow: 0 1px 2px 0 rgba(230, 232, 238, 0.616);
-    background-color: rgba(29, 26, 26, 0.600);
+     /*box-shadow: 0 1px 2px 0 rgba(230, 232, 238, 0.616);*/
+    /*background-color: rgba(29, 26, 26, 0.600);*/
     text-decoration-line: underline !important;
 }
 .filter-by-price h3{

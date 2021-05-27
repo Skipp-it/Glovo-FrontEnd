@@ -4,7 +4,7 @@ import React from "react";
 const PageLoader = () => {
   return (
     <div className="fp-container">
-      {/* <img src={loading1} className="fp-loader" alt="loading" /> */}
+       {/*<img src={loading1} className="fp-loader" alt="loading" /> */}
     </div>
   );
 };
