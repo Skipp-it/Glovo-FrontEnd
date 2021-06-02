@@ -14,7 +14,7 @@ const Recipe = ({id, name, description, userFirstName, userId, image, handleDele
                 <p className="description-meal">
                     {readMore
                         ? description
-                        : `${description.substring(0, 10)}...`}
+                        : `${description.substring(0, 100)}...`}
                     <button
                         className="showBtn"
                         onClick={() => setReadMore(!readMore)}>
