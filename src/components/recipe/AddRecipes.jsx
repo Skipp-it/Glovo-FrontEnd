@@ -34,7 +34,7 @@ export default function AddRecipes() {
     if (res.status === 202) {
       setError('');
       toast.success('Recipe was added!');
-      window.location.href = 'http://localhost:3000/recipes/all';
+      window.location.href = '/recipes/all';
       return true;
     }
     toast.error('Try again');
@@ -54,13 +54,11 @@ export default function AddRecipes() {
 
     const ReactS3Client = new S3(config);
     ReactS3Client.uploadFile(file, newFilename).then((data) => {
-      console.log(config)
       if (data.status === 204) {
         toast.success('Image was added!');
         setImage(data.location);
       } else {
         toast.error('Upload failed');
-        console.log('fail');
       }
     });
   };

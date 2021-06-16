@@ -12,7 +12,7 @@ const Meal = ({idMeal, strMeal, strMealThumb, price, handleAddToFav, handleAddTo
             <div className='meal'>
                 <div>
                     <Link to={`/meal/${idMeal}`}>
-                        <h3 className="text-meal">{strMeal}</h3>
+                        <h3 className="text-card-category">{strMeal}</h3>
                     </Link>
                 </div>
                 <div>

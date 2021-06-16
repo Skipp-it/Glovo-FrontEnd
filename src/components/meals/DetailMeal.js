@@ -18,9 +18,8 @@ const DetailMeal = () => {
             const result = await response.json();
             return result.meals[0]
         }, []);
-
         const price = useAsync(async () => {
-            const response = await fetch(`http://localhost:8080/prices/id/${param.id}`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/prices/id/${param.id}`, {
                     method: "GET",
                     headers: {
                         Authorization: 'Bearer ' + token
@@ -33,7 +32,7 @@ const DetailMeal = () => {
         const handleAdd = async () => {
             await axios({
                 method: 'post',
-                url: 'http://localhost:8080/favorite/addMeal',
+                url: process.env.REACT_APP_API_URL + '/favorite/addMeal',
                 data: {mealId: param.id},
                 headers: {
                     Authorization: 'Bearer ' + token

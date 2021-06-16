@@ -30,7 +30,7 @@ export default function SearchItems() {
         if (meals ) {
             for (let i = 0; i < meals.length; i++) {
                 const response = await axiosSpring
-                    .get(`prices/id/${meals[i].idMeal}`, {
+                    .get(`/prices/id/${meals[i].idMeal}`, {
                         headers: {
                             Authorization: 'Bearer ' + Cookies.get('token'),
                         },

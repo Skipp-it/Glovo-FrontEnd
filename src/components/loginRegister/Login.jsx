@@ -32,7 +32,7 @@ const Login = () => {
                 history.push('/');
         }).catch(error=> {
             console.log("data",error.response.data.message);
-            toast.error(error.response.data.message);
+            toast.error(error.response.data.message.toLowerCase());
         });
     };
 

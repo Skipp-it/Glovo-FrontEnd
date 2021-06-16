@@ -20,6 +20,7 @@ h3{
     font-family: 'Single Sleeve', sans-serif;
    font-size: 4rem;
     justify-content: space-between;
+    letter-spacing: 3px;
 }
 
 .display-categories{
@@ -45,6 +46,7 @@ h3{
      color: rgb(210, 105, 30);
     margin-top: 2em;
     margin-left: 2em;
+    letter-spacing: 3px;
 }
 
 .photo-category{

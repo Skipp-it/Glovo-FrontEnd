@@ -16,7 +16,7 @@ export default function Favorites() {
         setLoading(true)
         let response = await axios({
             method: 'get',
-            url: 'http://localhost:8080/favorite',
+            url: process.env.REACT_APP_API_URL + '/favorite',
             headers: {
                 Authorization: 'Bearer ' + token
             }

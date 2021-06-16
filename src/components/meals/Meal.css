@@ -41,6 +41,12 @@ h5 {
     width: 90%;
 }
 
+.meal-sort-by-price>.MuiFormControl-root{
+    opacity: 0.7;
+    background: #000;
+}
+
+
 .meal-sort-by-price {
     height: 5px;
 
@@ -126,6 +132,7 @@ h5 {
     margin-right: 1.5em;
     margin-top: 1em;
     font-family: 'Single Sleeve', sans-serif;
+    letter-spacing: 3px;
 }
 
 .price-add-meal {
@@ -205,7 +212,7 @@ h5 {
     align-content: center;
     margin-bottom: 4em;
     background-color: rgba(29, 26, 26, 0.600);
-    opacity: 80%;
+    opacity: 100%;
     border-radius: 2%;
 }
 
@@ -217,13 +224,13 @@ h5 {
 
 .filter-by-price{
     /*border: 1px chocolate solid !important;*/
-    width: 100% !important;
+    width: 10% !important;
     padding: 2em !important;
     margin-top: 1em !important;
     color: #f7f7f7;
     border-radius: 15%;
-     /*box-shadow: 0 1px 2px 0 rgba(230, 232, 238, 0.616);*/
-    /*background-color: rgba(29, 26, 26, 0.600);*/
+    box-shadow: 0 1px 2px 0 rgba(230, 232, 238, 0.616);
+    background-color: rgba(29, 26, 26, 0.600);
     text-decoration-line: underline !important;
 }
 .filter-by-price h3{
